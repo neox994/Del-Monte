@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tasky</string>
+
+    <string-array name="sPriorityOptions">
+        <item name="High Priority">High Priority</item>
+        <item name="Medium Priority">Medium Priority</item>
+        <item name="Low Priority">Low Priority</item>
+    </string-array>
+
+
+    <string-array name="sCategoryOptions">
+        <item name="Faculty">Faculty</item>
+        <item name="Work">Work</item>
+        <item name="Shopping">Shopping</item>
+        <item name="Other">Other</item>
+    </string-array>
+
+
+</resources>
