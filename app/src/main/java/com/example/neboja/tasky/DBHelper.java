@@ -9,7 +9,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import java.util.ArrayList;
 
     public class DBHelper extends SQLiteOpenHelper{
@@ -81,7 +80,8 @@ import java.util.ArrayList;
             return tasks;
         }
 
-        public static class Schema{
+        public static class Schema
+        {
             private static final int SCHEMA_VERSION = 1;
             private static final String DATABASE_NAME = "Task.db";
             static final String TABLE_TODO = "Tasks";
@@ -89,6 +89,5 @@ import java.util.ArrayList;
             static final String DESCRIPTION = "Task_description";
             static final String PRIORITY = "Task_priority";
             static final String CATEGORY = "Task_category";
-
     }
 }

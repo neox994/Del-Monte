@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -50,6 +51,7 @@ import java.util.ArrayList;
             this.lvTaskList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
                 @Override
                 public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                    Toast.makeText(getApplicationContext(), "Task Has Been DELETED!", Toast.LENGTH_LONG).show();
                     Task task = (Task) lvTaskList.getItemAtPosition(position);
                     tTaskAdapter.deleteAt(position);
                     DBHelper.getInstance(getApplicationContext()).Delete(task);

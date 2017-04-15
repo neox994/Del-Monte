@@ -6,13 +6,13 @@ package com.example.neboja.tasky;
 
 public class Task {
 
-
     private String tTitle;
     private String tDescription;
     private String tPriority;
     private String tCategory;
 
-    public Task(String title, String description, String priority, String category) {
+    public Task(String title, String description, String priority, String category)
+    {
         tTitle = title;
         tDescription = description;
         tPriority = priority;
@@ -24,7 +24,6 @@ public class Task {
     }
 
     public String gettDescription() {return tDescription;}
-
 
     public String gettPriority() {return tPriority;}
 

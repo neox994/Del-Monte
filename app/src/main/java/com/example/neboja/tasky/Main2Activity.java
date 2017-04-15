@@ -107,7 +107,7 @@ import android.widget.Toast;
                 taskCategory="Other";
 
             if (taskTitle.isEmpty() || taskDescription.isEmpty()){
-                Toast.makeText(getApplicationContext(), "Please enter some data!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Please Enter Task Title And Description!", Toast.LENGTH_SHORT).show();
             }
             else {
                 Task task = new Task(taskTitle, taskDescription, taskPriority, taskCategory);

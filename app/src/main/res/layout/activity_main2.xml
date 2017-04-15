@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/book"
     tools:context="com.example.neboja.tasky.Main2Activity">
 
 
@@ -12,8 +12,8 @@
         android:id="@+id/tvTaskTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="  Enter task title"
-        android:textSize="15dp"
+        android:text="  Enter Task Title"
+        android:textSize="19dp"
         android:textStyle="italic"/>
 
     <EditText
@@ -21,33 +21,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTaskTitle"
-        android:textSize="15dp"
+        android:textSize="19dp"
         />
-
-    <TextView
-        android:id="@+id/tvTaskDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etNewTaskTitle"
-        android:text="  Enter task description"
-        android:textSize="15dp"
-        android:textStyle="italic"/>
-
-    <EditText
-        android:id="@+id/etNewTaskDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvTaskDescription"
-        android:textSize="15dp"/>
-
 
     <TextView
         android:id="@+id/tvTaskCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etNewTaskDescription"
+        android:layout_below="@+id/etNewTaskTitle"
         android:text="  Chose Task Category"
-        android:textSize="15dp"
+        android:textSize="19dp"
         android:textStyle="italic"/>
 
     <Spinner
@@ -55,22 +38,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTaskCategory"
+
+        android:popupBackground="@android:color/holo_green_light"
         ></Spinner>
+
+    <TextView
+        android:id="@+id/tvTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sCSpinner"
+        android:text="  Enter Task Description"
+        android:textSize="19dp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/etNewTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTaskDescription"
+        android:textSize="19dp"/>
 
     <TextView
         android:id="@+id/tvTaskPriority"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sCSpinner"
+        android:layout_below="@+id/etNewTaskDescription"
         android:text="  Chose Task Priority"
-        android:textSize="15dp"
+        android:textSize="19dp"
         android:textStyle="italic"/>
 
     <Spinner
         android:id="@+id/sPSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvTaskPriority">
+        android:layout_below="@+id/tvTaskPriority"
+        android:popupBackground="@android:color/holo_green_light">
     </Spinner>
 
     <Button
@@ -78,7 +80,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Add New Task" />
+        android:text="Click To Add New Task!"
+        android:textSize="20dp"
+        android:background="@android:color/holo_green_light"/>
 
 </RelativeLayout>
 
